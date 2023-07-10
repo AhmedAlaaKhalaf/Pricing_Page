@@ -1,0 +1,289 @@
+﻿:root {
+    --backgroung-white: white;
+    --background-red:red;
+}
+
+
+* {
+    margin: 0;
+}
+
+.container {
+    background: url(../../Media/Images/TreeCover.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_header {
+    color: white;
+    font-family: cursive;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.PricingContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    font-family: sans-serif;
+    border: 1px solid #b5b1b1;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin: 0 20px;
+    transition: transform 1s;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 13px 6px #a6a1a1;
+}
+
+.PriceTitle1, .PriceTitle2, .PriceTitle3 {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 50px;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.PriceTitle1 {
+    background-color: #34e0a0;
+}
+
+.PriceTitle2 {
+    background-color: #7a7aca;
+}
+
+.PriceTitle3 {
+    background-color: #1d1c1c;
+}
+
+
+.PriceDetails {
+    text-align: center;
+}
+
+    .PriceDetails p {
+        height: 40px;
+        background: #e3f9f4;
+        line-height: 40px;
+        border-bottom: 1px blue solid;
+    }
+
+.MainTitle {
+    color: var(--backgroung-white);
+    font-size: 21px;
+    /*letter-spacing: 2px;*/
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.PriceVal {
+    color: var(--backgroung-white);
+    font-size: 80px;
+}
+
+.SubTitle {
+    color: #ffffffd4;
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+
+.PriceChoose {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #b5b1b1;
+}
+.last_container {
+    margin-top: 50px;
+}
+
+.textRow {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+    .textRow div {
+        margin: 30px;
+        cursor: pointer;
+        transition: transform 1s;
+    }
+    .textRow div:hover {
+       transform: scale(1.2);
+       background: #cef3e5;
+       border-radius: 20px;
+    }
+
+        .textRow div span {
+            font-size: 28px;
+            font-family: sans-serif;
+        }
+
+        .textRow div p {
+            margin-top: 14px;
+            font-family: sans-serif;
+            font-size: 17px;
+            color: #00000091;
+            line-height: 1.5;
+        }
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-weight: 400;
+    padding: 20px;
+    font-size: 21px;
+}
+
+    .footer a {
+        color: white;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    .footer span {
+        color: #bcb0b0;
+    }
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+a.tags {
+    flex: 0 0 12%;
+    max-width: 12%;
+    text-decoration: none;
+    padding: 7px;
+}
+
+a.button {
+    font-size: 20px;
+    text-decoration: none;
+    color: #0f0f0f;
+    border: 1px solid #926239;
+    border-radius: 25px;
+    padding: 11px;
+    margin-top: 20px;
+}
+/* :root {     to make a variable fixed and re-use it as a variable
+    --background-red: rgb(83, 12, 12) ;
+    --background-grey: rgb(105, 105, 105) ;
+} */
+
+
+/* ============= responsivness============== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    a.tags {
+        flex: 0 0 17%;
+        max-width: 17%;
+    }
+
+    .PricingContainer {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+
+    .textRow {
+        flex-direction: column;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  
+    a.tags {
+        flex: 0 0 17%;
+        max-width: 17%;
+    }
+
+    .PricingContainer {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+
+    .textRow {
+        flex-direction: column;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    a.tags {
+        flex: 0 0 17%;
+        max-width: 17%;
+    }
+
+    .PricingContainer {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 80%;
+    }
+
+    .textRow {
+        flex-direction: column;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+} 
